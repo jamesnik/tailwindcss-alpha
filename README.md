@@ -2,6 +2,33 @@
 
 > Automatic alpha variants for your Tailwind CSS colors
 
+## Start Update for v1.x Config
+
+# Example
+```js
+// tailwind.config.js or tailwind.js
+module.exports = {
+	theme: {
+		extend: {}
+	},
+	variants: {},
+	plugins: [
+		require('tailwindcss-alpha')({
+			modules: {
+				backgroundColor: true
+			},
+			alpha: {
+				'25': 0.25,
+        '50': 0.5,
+        '75': 0.75
+			}
+		})
+	]
+}
+```
+
+## End Update for v1.x Config -------
+
 ## Why?
 
 If you’re like me your Tailwind CSS color configuration often ends up looking something like this:
